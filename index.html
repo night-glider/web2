@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+
+  <form class="login-form" id="login-form" method="POST" dataset="login-form">
+    <div class="form-container">
+    <label for="loginForm-email-input">Логин</label>
+    <input id="loginForm-email-input" type="email" required="" placeholder="example@example.com">
+
+    <label for="loginForm-password-input">Пароль</label>
+    <input id="loginForm-password-input" type="password" required="">
+
+    <input type="submit" value="Войти">
+
+    <div class="button" id="login-form-button-to-signup">Регистрация</div>
+    </div>
+  </form>
+  <form class="login-form" id="signup-form" dataset="singup-form">
+    <div class="form-container">
+    <label for="signupForm-name-input">Имя</label>
+    <input id="signupForm-name-input" type="name" required="" placeholder="Иван" pattern="[А-Яа-яA-Za-z\s-]*" title="Используйте русские или латинские буквы">
+
+    <label for="signupForm-email-input">E-mail</label>
+    <input id="signupForm-email-input" type="email" required="" placeholder="example@example.com" title="Введите email">
+
+    <label for="signupForm-phone-input">Телефон</label>
+    <input id="signupForm-phone-input" type="text" required="" placeholder="89205108779" pattern="8\d{3}\d{3}\d{2}\d{2}" title="Введите телефон в формате 8**********">
+
+    <label for="signupForm-password-input">Пароль</label>
+    <input id="signupForm-password-input" type="password" required="" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" title="Минимум 6 символов. Обязательно наличие букв и цифр">
+
+    <label for="signupForm-passwordRepeat-input" class="form-label password-form-label">Повторите пароль</label>
+    <input id="signupForm-passwordRepeat-input" type="password" required="" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Минимум 8 символов. Обязательно наличие букв и цифр">
+
+    <label for="signupForm-checkbox-input">Соглашение на обработку персональных данных</label>
+    <input id="signupForm-checkbox-input" type="checkbox" required="">
+                
+    <input type="submit" class="form-signup-button" value="Регистрация">
+
+    <div class="button" id="signup-form-button-to-login">Вход</div>
+  </div>
+  </form>
+
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      ScreenShotExample
+    </a>
+    <div class="login-button" id="header_login_button">
+      Вход
+    </div>
+  </header>
+  <div class="upload-shot">
+    Перетащите сюда скриншот
+  </div>
+  <div class="screenshot-container">
+    <div class="screenshot">
+      <img src="https://softsmart.co.za/wp-content/uploads/2018/06/image-not-found-1038x576.jpg">
+      Дата добавления: сегодня
+    </div>
+    <div class="screenshot">
+      <img src="https://i.pinimg.com/originals/6b/5c/8e/6b5c8e5d64edd8927394aa333ae59125.jpg">
+      Дата добавления: вчера
+    </div>
+    <div class="screenshot">
+      <img src="https://static.wikia.nocookie.net/elite-dangerous/images/f/f7/Neutron-Highway-Art-Elite-Dangerous-Mathew-Maddison.png/revision/latest?cb=20180915143023">
+      Дата добавления: позавчера
+    </div>
+    <div class="screenshot">
+      <img src="http://i.imgur.com/0QpD67D.jpg">
+      Дата добавления: 10 сентября 2010 года
+    </div>
+  </div>
+  <footer>
+    <span>nightgliderdev@gmail.com</span>
+    <a href="https://vk.com/zhidkov_ivan1">ВК</a>
+  </footer>
+</body>
+<script src="script.js"></script>
+</html>
